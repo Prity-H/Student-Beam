@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentBeam - Projector Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>StudentBeam</h1>
+      <p>Projector Synchronization Portal</p>
+    </header>
+
+    <main>
+      <form id="attendanceForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required />
+
+        <label for="studentID">Roll Number:</label>
+        <input type="text" id="studentID" name="studentID" required />
+
+        <button type="submit">Sync Attendance</button>
+      </form>
+
+      <p id="statusMsg"></p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
